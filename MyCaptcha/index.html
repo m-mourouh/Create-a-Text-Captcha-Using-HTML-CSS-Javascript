@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<body>
+    <div class="captcha-container">
+        <div class="header">Security Check</div>
+        <div class="securityCode">
+            <p id="code"></p>
+            <div class="icons">
+                <span class="readText">
+                    <i class="fas fa-headphones"></i>
+                </span>
+                <span class="changeText">
+                    <i class="fas fa-sync-alt"></i>
+                </span>
+             </div>
+        </div>
+        <div class="userInput">
+            <input type="text" placeholder="Type the text here" >
+            <button type="submit" class="btn">Submit</button>
+        </div>
+    </div>
+    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

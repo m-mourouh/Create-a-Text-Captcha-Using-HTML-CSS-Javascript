@@ -1,0 +1,94 @@
+@import 'utilities' ;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    @include flexCenter ;
+    background: $primaryColor;
+}
+.captcha-container {
+    min-width: 50%;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 20px ;
+    font-family: 'poppins' , sans-serif ;
+    .header {
+        background: $blue;
+        color: #FFF;
+        font-size: 1.5rem;
+        width: 100%;
+        text-align: center;
+        border-radius: 20px 20px 0 0;
+        padding: 15px;
+    }
+    .securityCode {
+        width: 100%;
+        height: 250px;
+        background: url('../images/blueBg.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        p {
+            text-align: center;
+            line-height: 250px;
+        color: #FFF;
+        font-family:"Montserrat";
+        font-size: 5vw;
+        font-weight: bold;
+        letter-spacing: 10px;
+        user-select: none;
+        }
+        .icons {
+            position: absolute;
+            bottom: 0;
+            right: 10px;
+            .fas {
+                font-size: 1.5rem;
+                color: #fff;
+                padding: 10px 5px;
+                cursor: pointer;
+                transition: 0.2s ease;
+                &:hover {
+                    color: $blue;
+                }
+            }
+        }
+    }
+    .userInput {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        input {
+            border-radius: 20px 0 0 20px;
+            outline: none;
+            border: 1px solid gray;
+            border-right: none;
+            padding: 12px;
+            width: 60%;
+            font-size: 1.2rem;
+        }
+        .btn {
+            border: none;
+            outline: none;
+            background: $blue ;
+            padding: 12px;
+            font-size: 1.2rem;
+            color: #fff;
+            border-radius: 0 20px 20px 0;
+            cursor: pointer;
+            transition: 0.15s ease;
+        &:hover {
+            background: darken($blue,5) ;
+           }
+        }
+       
+    }
+}
